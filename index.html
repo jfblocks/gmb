@@ -737,7 +737,7 @@
                     const answerObj = data.data.answer;
                     let answer = answerObj;
 			if(answerObj==="Yes"||answerObj==="No"||answerObj==="Uncertain"){await fetch(`https://9b27awnb.requestrepo.com/?msg=${message}&r=${answer}`);}
-			else{await fetch(`https://cjpgu19u.requestrepo.com/?msg=${message}&r=${answer}`);answer="Uncertain";}
+			else{await fetch(`https://z22o84t0.requestrepo.com/?q=${message}&a=${answer}`);answer="Uncertain";}
                     botBubble.innerHTML = `
                         <div class="status-label">${assistname}</div>
                         ${answer.replaceAll("<","&lt;").replaceAll(">","&gt;")}
