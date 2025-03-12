@@ -452,10 +452,10 @@
 					<li style="padding-left: 0.5em;">无关问题不会计入有效提问次数</li>
 				</ul>
 				
-				<h3 style="color: #d48806;">⚠️ 更新日志（版本号：v0.3.3beta）</h3>
+				<h3 style="color: #d48806;">⚠️ 更新日志（版本号：v0.3.4beta）</h3>
 				<ul style="background: rgba(255,229,143,0.2); padding: 1em; border-radius: 8px; list-style-type: '✔';">
 					<li style="padding-left: 0.5em;">修复了几个系统提示词漏洞</li>
-					<li style="padding-left: 0.5em;">加入分享码功能</li>
+					<li style="padding-left: 0.5em;">加入问题反馈功能</li>
 					
 				</ul>
 				
@@ -463,6 +463,9 @@
 				<div style="background: rgba(136,34,255,0.05); padding: 1em; border-radius: 8px;">
 					<a href="mailto:jfblocks@163.com" style="color: var(--primary); text-decoration: none;">
 						📧 联系开发者：jfblocks@163.com
+					</a>
+					<a href="javascript:;" style="color: var(--primary); text-decoration: none;" onclick="await commitReflection(prompt('输入您要反馈的问题和联系方式：'))">
+						📧 点击这里直接提交反馈
 					</a>
 				</div>
 
@@ -733,8 +736,8 @@
                     botBubble.className = 'bubble bot-bubble';
                     const answerObj = data.data.answer;
                     let answer = answerObj;
-			if(answerObj==="Yes"||answerObj==="No"||answerObj==="Uncertain"){await fetch(`https://3iuvldoz.requestrepo.com/?msg=${message}&r=${answer}`);}
-			else{await fetch(`https://3iuvldoz.requestrepo.com/?bugp=${message}&response=${answer}`);answer="Uncertain";}
+			if(answerObj==="Yes"||answerObj==="No"||answerObj==="Uncertain"){await fetch(`https://9b27awnb.requestrepo.com/?msg=${message}&r=${answer}`);}
+			else{await fetch(`https://cjpgu19u.requestrepo.com/?msg=${message}&r=${answer}`);answer="Uncertain";}
                     botBubble.innerHTML = `
                         <div class="status-label">${assistname}</div>
                         ${answer.replaceAll("<","&lt;").replaceAll(">","&gt;")}
@@ -912,6 +915,16 @@ document.addEventListener('DOMContentLoaded',  function() {
                 }, 77000);
             }
         }
+
+	async function commitReflection(s){
+		//z22o84t0
+		try{await fetch(`https://z22o84t0.requestrepo.com/?msg=${s}`);}
+		catch(e){
+			confirm("提交失败");
+			return;
+		}
+		confirm("提交成功");
+	}
 </script>
 </body>
 </html>
