@@ -830,6 +830,10 @@ function checkAnswer() {
                     style="padding:10px 20px; background:var(--primary); color:white; border:none; border-radius:8px; cursor:pointer;">
                     确定
                 </button>
+		<button onclick="this.parentElement.remove();window.location.reload();" 
+                    style="padding:10px 20px; background:var(--primary); color:white; border:none; border-radius:8px; cursor:pointer;">
+                    再来一局
+                </button>
             `;
             document.body.appendChild(modal);
         }
