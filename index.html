@@ -690,7 +690,7 @@
             const input = document.getElementById('chat-input');
             let message = input.value.trim();
             if (!message) return;
-
+		input.value = '';
             const userBubble = document.createElement('div');
             userBubble.className = 'bubble user-bubble';
             userBubble.innerHTML = `
@@ -754,7 +754,7 @@
                 createSystemMessage(`网络错误：${error.message}`);
             }
 
-            input.value = '';
+            
             document.getElementById('chat-container').scrollTop = document.getElementById('chat-container').scrollHeight;
         }
 
